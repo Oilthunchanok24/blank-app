@@ -128,7 +128,10 @@ if art_toy_input:
         # Use Gemini AI to generate the collection details for the entered art toy
         if model:
             try:
-                response = model.generate_content(f"Provide collection details for {art_toy_input} art toy")
+                # Update the prompt to include your expertise
+                response = model.generate_content(
+                    f"I am an expert in art toys. Provide detailed collection information for {art_toy_input} art toy."
+                )
                 bot_response = response.text
 
                 # Store and display the bot response
