@@ -130,7 +130,7 @@ if art_toy_input:
             try:
                 # Update the prompt to include your expertise
                 response = model.generate_content(
-                    f"I am an expert in art toys. Provide detailed collection information for {art_toy_input} art toy."
+                    f"I am an expert in art toys pop mart. Provide detailed collection information for {art_toy_input} art toy pop mart."
                 )
                 bot_response = response.text
 
